@@ -1,0 +1,494 @@
+htm tags and usage
+1)HTML <a> Tag
+Definition and Usage
+The <a> tag defines a hyperlink, which is used to link from one page to another.
+
+The most important attribute of the <a> element is the href attribute, which indicates the link's destination.
+
+By default, links will appear as follows in all browsers:
+
+An unvisited link is underlined and blue
+A visited link is underlined and purple
+An active link is underlined and red
+Example
+A link to W3Schools.com:
+
+<a href="https://www.w3schools.com">Visit W3Schools.com!</a>
+
+
+2)HTML <address> Tag
+Example
+Contact information for Example.com:
+
+<address>
+Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
+Visit us at:<br>
+Example.com<br>
+Box 564, Disneyland<br>
+USA
+</address>
+
+
+3)HTML <area> Tag
+Example
+An image-map, with clickable areas:
+
+<img src="planets.gif" width="145" height="126" alt="Planets"
+usemap="#planetmap">
+
+<map name="planetmap">
+  <area shape="rect" coords="0,0,82,126" href="sun.htm" alt="Sun">
+  <area shape="circle" coords="90,58,3" href="mercur.htm" alt="Mercury">
+  <area shape="circle" coords="124,58,8" href="venus.htm" alt="Venus">
+</map>
+
+
+4)HTML <aside> Tag
+Example
+<p>My family and I visited The Epcot center this summer.</p>
+
+<aside>
+  <h4>Epcot Center</h4>
+  <p>The Epcot Center is a theme park in Disney World, Florida.</p>
+</aside>
+
+
+5)HTML <b> Tag
+Example
+<p>This is normal text - <b>and this is bold text</b>.</p>
+Definition and Usage
+The <b> tag specifies bold text without any extra importance.
+
+
+
+
+6)HTML <base> Tag
+Example
+Specify a default URL and a default target for all links on a page:
+
+<head>
+  <base href="https://www.w3schools.com/" target="_blank">
+</head>
+
+<body>
+<img src="images/stickman.gif" width="24" height="39" alt="Stickman">
+<a href="tags/tag_base.asp">HTML base Tag</a>
+</body>
+Definition and Usage
+The <base> tag specifies the base URL/target for all relative URLs in a document.
+
+There can be at maximum one <base> element in a document, and it must be inside the <head> element.
+
+7)HTML <br> Tag
+Example
+A line break is marked up as follows:
+
+This text contains<br>a line break.
+Definition and Usage
+The <br> tag inserts a single line break.
+
+The <br> tag is an empty tag which means that it has no end tag.
+
+
+8)HTML <caption> Tag
+Example
+A table with a caption:
+
+<table>
+  <caption>Monthly savings</caption>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+</table>
+Definition and Usage
+The <caption> tag defines a table caption.
+
+The <caption> tag must be inserted immediately after the <table> tag.
+
+Note: You can specify only one caption per table.
+
+Tip: By default, a table caption will be center-aligned above a table. However, the CSS properties text-align and caption-side can be used to align and place the caption.
+
+9)HTML <cite> Tag
+Example
+Define the title of a work with the <cite> tag:
+
+<p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p>
+Definition and Usage
+The <cite> tag defines the title of a work (e.g. a book, a song, a movie, a TV show, a painting, a sculpture, etc.).
+
+Note: A person's name is not the title of a work.
+
+
+10)
+<DD>	
+definition description
+	<DL>
+<DT>Definition Term
+<DD>Definition of the term
+<DT>Definition Term
+<DD>Definition of the term
+</DL>
+
+11)
+<DL>
+	definition list
+	<DL>
+<DT>Definition Term
+<DD>Definition of the term
+<DT>Definition Term
+<DD>Definition of the term
+</DL>
+
+
+12)
+<DT>
+	definition term	
+<DL>
+<DT>Definition Term
+<DD>Definition of the term
+<DT>Definition Term
+<DD>Definition of the term
+</DL>
+
+13)
+<EM>	
+emphasis	This is an <EM>Example</EM> of using the emphasis tag
+
+14)
+<EM>	emphasis	This is an <EM>Example</EM> of using the emphasis tag	This is an Example of using the emphasis tag
+
+
+15)
+<EMBED>
+embed object	
+<EMBED src="yourfile.mid" width="100%" height="60" align="center">
+
+15)	
+<EMBED>	embed object	<EMBED src="yourfile.mid" autostart="true" hidden="false" loop="false">
+<noembed><bgsound src="yourfile.mid" loop="1"></noembed>	
+
+16)
+<FONT>	font	
+<FONT FACE="Times New Roman">Example</FONT>	
+
+17)
+<H1>
+	heading 1
+	<H1>Heading 1 Example</H1>	
+
+
+18)
+<H2>
+	heading 2	<
+H2>Heading 2 Example</H2>	
+
+19)
+
+<H3>
+	heading 3	
+<H3>Heading 3 Example</H3>	
+
+
+20)
+<H4>
+	heading 4	
+<H4>Heading 4 Example</H4>	
+
+
+
+21)
+<H5>
+	heading 5	
+<H5>Heading 5 Example</H5>	
+
+
+22)
+<H6>	
+heading 6	
+<H6>Heading 6 Example</H6>	
+Heading 6 Example
+
+23)
+<HEAD>
+	heading of document	
+<HEAD>Contains elements describing the document</HEAD>
+
+
+
+
+24)
+<HR>	
+horizontal rule
+	<HR>	
+<HR>	horizontal rule	<HR WIDTH="50%" SIZE="3">	
+
+
+25)
+<I>	
+italic	
+<I>Example</I>
+
+
+26)
+<IMG>	
+image
+	<IMG SRC="Earth.gif" WIDTH="41" HEIGHT="41" BORDER="0" ALT="a sentence about your site">
+
+
+27)	
+<INPUT>	
+input field	
+<FORM METHOD=post ACTION="/cgi-bin/example.cgi">
+<INPUT type="text" size="10" maxlength="30">
+<INPUT type="Submit" VALUE="Submit">
+</FORM>	
+
+
+28)
+HTML <ul> Tag
+
+Example
+An unordered HTML list:
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+More "Try it Yourself" examples below.
+
+Definition and Usage
+The <ul> tag defines an unordered (bulleted) list.
+
+Use the <ul> tag together with the <li> tag to create unordered lists.
+
+
+
+29)
+
+HTML <u> Tag
+
+Example
+Underline a misspelled word with the <u> tag:
+
+<p>This is a <u>parragraph</u>.</p>
+Definition and Usage
+The <u> tag represents some text that should be stylistically different from normal text, such as misspelled words or proper nouns in Chinese.
+
+
+
+
+30)
+HTML <track> Tag
+
+Example
+A video with two subtitle tracks:
+
+<video width="320" height="240" controls>
+  <source src="forrest_gump.mp4" type="video/mp4">
+  <source src="forrest_gump.ogg" type="video/ogg">
+  <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+  <track src="subtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian">
+</video>
+Definition and Usage
+The <track> tag specifies text tracks for media elements (<audio> and <video>).
+
+This element is used to specify subtitles, caption files or other files containing text, that should be visible when the media is playing.
+
+
+
+31)
+HTML <thead> Tag
+
+Example
+An HTML table with a <thead>, <tbody>, and a <tfoot> element:
+
+<table>
+  <thead>
+    <tr>
+      <th>Month</th>
+      <th>Savings</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>January</td>
+      <td>$100</td>
+    </tr>
+    <tr>
+      <td>February</td>
+      <td>$80</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>Sum</td>
+      <td>$180</td>
+    </tr>
+  </tfoot>
+</table>
+Definition and Usage
+The <thead> tag is used to group header content in an HTML table.
+
+The <thead> element is used in conjunction with the <tbody> and <tfoot> elements to specify each part of a table (header, body, footer).
+
+Browsers can use these elements to enable scrolling of the table body independently of the header and footer. Also, when printing a large table that spans multiple pages, these elements can enable the table header and footer to be printed at the top and bottom of each page.
+
+The <thead> tag must be used in the following context: As a child of a <table> element, after any <caption>, and <colgroup> elements, and before any <tbody>, <tfoot>, and <tr> elements.
+
+
+
+32)
+HTML <th> Tag
+
+Example
+A simple HTML table with two header cells and two data cells:
+
+<table>
+ <tr>
+   <th>Month</th>
+   <th>Savings</th>
+ </tr>
+ <tr>
+   <td>January</td>
+   <td>$100</td>
+ </tr>
+</table>
+More "Try it Yourself" examples below.
+
+Definition and Usage
+The <th> tag defines a header cell in an HTML table.
+
+An HTML table has two kinds of cells:
+
+Header cells - contains header information (created with the <th> element)
+Standard cells - contains data (created with the <td> element)
+The text in <th> elements are bold and centered by default.
+
+The text in <td> elements are regular and left-aligned by default.
+
+
+
+
+33)
+HTML <tfoot> Tag
+
+Example
+An HTML table with a <thead>, <tbody>, and a <tfoot> element:
+
+<table>
+  <thead>
+    <tr>
+      <th>Month</th>
+      <th>Savings</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>January</td>
+      <td>$100</td>
+    </tr>
+    <tr>
+      <td>February</td>
+      <td>$80</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>Sum</td>
+      <td>$180</td>
+    </tr>
+  </tfoot>
+</table>
+Definition and Usage
+The <tfoot> tag is used to group footer content in an HTML table.
+
+
+
+
+
+34)
+HTML <div> Tag
+
+Example
+A section in a document that will have a light blue background color:
+
+<div style="background-color:lightblue">
+  <h3>This is a heading</h3>
+  <p>This is a paragraph.</p>
+</div>
+Definition and Usage
+The <div> tag defines a division or a section in an HTML document.
+
+The <div> element is often used as a container for other HTML elements to style them with CSS or to perform certain tasks with JavaScript.
+
+
+
+
+
+
+35)
+HTML <dir> Tag. Not Supported in HTML5.
+
+Example
+A directory list:
+
+<dir>
+  <li>html</li>
+  <li>xhtml</li>
+  <li>css</li>
+</dir>
+Definition and Usage
+The <dir> tag is not supported in HTML5. Use <ul> or CSS instead.
+
+The <dir> tag is used to list directory titles.
+
+
+
+
+
+The <tfoot> element is used in conjunction with the <thead> and <tbody> elements to specify each part of a table (footer, header, body).
+
+Browsers can use these elements to enable scrolling of the table body independently of the header and footer. Also, when printing a large table that spans multiple pages, these elements can enable the table header and footer to be printed at the top and bottom of each page.
+
+The <tfoot> tag must be used in the following context: As a child of a <table> element, after any <caption>, <colgroup>, <thead>, and <tbody> elements.
+
+
+
+
+
+
+
+
+                                                    CSS properties
+
+
+1)Animation Properties
+Property	               Description
+
+animation 	                    Specifies the keyframe-based animations.
+animation-delay 	          Specifies when the animation will start.
+animation-direction             	Specifies whether the animation should play in reverse on alternate cycles or not.
+animation-duration 	          Specifies the number of seconds or milliseconds an animation should take to complete one cycle.
+animation-fill-mode 	         Specifies how a CSS animation should apply styles to its target before and after it is executing.
+animation-iteration-count 	 Specifies the number of times an animation cycle should be played before stopping.
+
+
+2)Background Properties
+
+Property			Description
+
+background	  	Defines a variety of background properties within one declaration.
+background-attachment	Specify whether the background image is fixed in the viewport or scrolls.
+background-clip 	Specifies the painting area of the background.
+background-color	Defines an element's background color.
+background-image	Defines an element's background image.
+background-origin 	Specifies the positioning area of the background images.
+background-position	Defines the origin of a background image.
+
